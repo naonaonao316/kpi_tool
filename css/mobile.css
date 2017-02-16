@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+@media screen and (min-width: 0px) and (max-width: 720px) {
+  .pc_only {
+    display:none;
+  }
+
+  .mobile_only {
+    display:block;
+  }
+
+  .header-feature-box-outer {
+    width:100%;
+    clear:both;
+  }
+
+  .header-feature-box {
+    margin:7px auto;
+    width:100%;
+    border:solid 1px #999;
+    border-radius: 5px;
+    clear:both;
+    height:auto;
+    padding-bottom:15px;
+  }
+}
