@@ -12,10 +12,14 @@
     <script src="./js/plugins/jqplot.canvasAxisLabelRenderer.js"></script>
     <script src="./js/plugins/jqplot.canvasTextRenderer.js"></script>
     <script src="./js/plugins/jqplot.pieRenderer.js"></script>
+    <script src="./js/markitup/jquery.markitup.js"></script>
+    <script src="./js/markitup/sets/set.js"></script>
     <script class="include" type="text/javascript" scr="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="./css/jquery.jqplot.css" />
     <link rel="stylesheet" type="text/css" href="./css/pc.css" />
     <link rel="stylesheet" type="text/css" href="./css/mobile.css" />
+    <link rel="stylesheet" type="text/css" href="./css/markitup/style.css" />
+    <link rel="stylesheet" type="text/css" href="./css/markitup/textile/style.css" />
     <link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.0/themes/smoothness/jquery-ui.css" />
   </head>
   <body>
@@ -40,6 +44,14 @@
         <div id="chart5"></div>
       </div>
     <div>
+      <textarea id="markdown" cols="80" rows="20">
+      </textarea>
+    </div>
+    <script language="javascript">
+      $(document).ready(function() {
+        $('#markdown').markItUp(mySettings);
+      });
+    </script>
     <script class="code" type="text/javascript">
       $(document).ready(function(){
         var line1 = [['Nissan', 4],['Porche', 6],['Acura', 2],['Aston Martin', 5],['Rolls Royce', 6]];
